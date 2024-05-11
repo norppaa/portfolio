@@ -82,18 +82,18 @@ export default function Header() {
             </MenuItem>
           </Link>
 
-          <Link to={"/projects"}>
+          <Link to="/experience">
             <MenuItem onClick={handleMenu} sx={{ textTransform: "none" }}>
               <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Projects?
+                Experience?
               </Typography>
             </MenuItem>
           </Link>
 
-          <Link to="/projects">
+          <Link to={"/projects"}>
             <MenuItem onClick={handleMenu} sx={{ textTransform: "none" }}>
               <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Experience?
+                Projects?
               </Typography>
             </MenuItem>
           </Link>
