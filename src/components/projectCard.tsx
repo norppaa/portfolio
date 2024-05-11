@@ -18,19 +18,29 @@ function ProjectCard({ imageSrc, title, text }: ProjectCardProps) {
         flexDirection: "column",
         alignItems: "center",
         p: "20px",
+        maxWidth: "70vw",
       }}
     >
-      <Avatar alt="OpenVAA" src={imageSrc} sx={{ width: 40, height: 40 }} />
+      <Avatar
+        alt="OpenVAA"
+        src={imageSrc}
+        sx={{ width: "4rem", height: "4rem" }}
+      />
       <CardContent>
         <Typography
-          variant="h4"
+          variant="h5"
           fontFamily={theme.text?.primary?.font}
-          sx={{ textAlign: "center" }}
+          sx={{
+            textAlign: "center",
+            px: "1rem",
+
+            flexWrap: "wrap",
+          }}
         >
           {title}
         </Typography>
         <Typography
-          variant="h6"
+          variant="body2"
           fontFamily={theme.text?.primary?.font}
           sx={{ textAlign: "center" }}
         >
