@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
+
+body {
+  background-color: #475e39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f0d7;
+}
