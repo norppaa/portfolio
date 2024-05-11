@@ -3,6 +3,7 @@ import "../styles/App.css";
 import { East } from "@mui/icons-material";
 import theme from "../styles/theme";
 import Header from "../components/header";
+import { Link } from "react-router-dom";
 
 function HeroPage() {
   return (
@@ -25,43 +26,56 @@ function HeroPage() {
           <Container
             sx={{
               display: "flex",
-              justifyContent: "center",
               flexDirection: "column",
             }}
           >
-            <Button
-              variant="text"
-              color="inherit"
-              size="small"
-              sx={{ textTransform: "none" }}
-              endIcon={<East fontSize="large" />}
+            <Link
+              to="/experience"
+              style={{
+                color: "#f7f0d7",
+                display: "flex",
+                justifyContent: "center",
+              }}
             >
-              <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Read more about me
-              </Typography>
-            </Button>
-            <Button
-              variant="text"
-              color="inherit"
-              size="small"
-              sx={{ textTransform: "none" }}
-              endIcon={<East fontSize="large" />}
+              <Button
+                variant="text"
+                color="inherit"
+                size="small"
+                endIcon={<East fontSize="large" />}
+              >
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="button"
+                  sx={{ textTransform: "none" }}
+                >
+                  Read about my experience
+                </Typography>
+              </Button>
+            </Link>
+
+            <Link
+              to="/projects"
+              style={{
+                color: "#f7f0d7",
+                display: "flex",
+                justifyContent: "center",
+              }}
             >
-              <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Read about my projects
-              </Typography>
-            </Button>
-            <Button
-              variant="text"
-              color="inherit"
-              size="small"
-              sx={{ textTransform: "none" }}
-              endIcon={<East fontSize="large" />}
-            >
-              <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Read about my experience
-              </Typography>
-            </Button>
+              <Button
+                variant="text"
+                color="inherit"
+                size="small"
+                endIcon={<East />}
+              >
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="button"
+                  sx={{ textTransform: "none" }}
+                >
+                  Read about my projects
+                </Typography>
+              </Button>
+            </Link>
           </Container>
         </Container>
       </Container>
