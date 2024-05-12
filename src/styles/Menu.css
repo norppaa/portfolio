@@ -1,17 +1,14 @@
 #menu {
-  width: 60vw;
-}
-
-.MuiPaper-paper {
-  background-color: #f7f0d7;
-  color: #f7f0d7;
-  height: 100vh;
+  /* background-color: #f7f0d7; */
 }
 
 .tapan {
-  position: absolute;
   background-color: #f7f0d7;
-  max-height: none;
   width: 60vw;
-  height: 100vh;
+  height: 130vh;
+}
+
+.MuiList-root {
+  background-color: #f7f0d7;
+  margin: 100px;
 }

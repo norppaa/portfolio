@@ -15,8 +15,9 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-
-  const handleMenu = () => {
+  const [menu, setMenu] = useState(null);
+  const handleClick = (e: any) => {
+    setMenu(e.currentTarget);
     setOpen(!open);
   };
 
@@ -48,7 +49,7 @@ export default function Header() {
             Noora Puhakka
           </Typography>
 
-          <IconButton onClick={handleMenu}>
+          <IconButton onClick={handleClick}>
             <MenuIcon htmlColor="#f7f0d7"></MenuIcon>
           </IconButton>
         </Container>
@@ -59,23 +60,20 @@ export default function Header() {
           classes={{
             paper: "tapan",
           }}
+          anchorEl={menu}
           sx={{
-            top: "10px",
-            left: "42vw",
-            height: "95vh",
-            bgColor: "#f7f0d7",
-            maxHeight: "none",
+            top: "-35px",
           }}
         >
           <MenuItem
-            onClick={handleMenu}
+            onClick={handleClick}
             sx={{ display: "flex", justifyContent: "right" }}
           >
             <CloseIcon fontSize="small" sx={{ position: "left" }} />
           </MenuItem>
 
-          <Link to={"/"}>
-            <MenuItem onClick={handleMenu} sx={{ textTransform: "none" }}>
+          <Link to={"/"} onClick={handleClick}>
+            <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
               <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
                 Me?
               </Typography>
@@ -83,7 +81,7 @@ export default function Header() {
           </Link>
 
           <Link to="/experience">
-            <MenuItem onClick={handleMenu} sx={{ textTransform: "none" }}>
+            <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
               <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
                 Experience?
               </Typography>
@@ -91,7 +89,7 @@ export default function Header() {
           </Link>
 
           <Link to={"/projects"}>
-            <MenuItem onClick={handleMenu} sx={{ textTransform: "none" }}>
+            <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
               <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
                 Projects?
               </Typography>
