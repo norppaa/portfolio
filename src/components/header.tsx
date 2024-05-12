@@ -110,6 +110,17 @@ export default function Header() {
                 </Typography>
               </MenuItem>
             </Link>
+
+            <Link to={"/funnything"}>
+              <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="body2"
+                >
+                  Want to see a funny thing?
+                </Typography>
+              </MenuItem>
+            </Link>
           </MenuList>
         </Menu>
       </Toolbar>

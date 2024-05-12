@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 function HeroPage() {
   return (
     <div>
-      <Header />
       <Container maxWidth="lg">
         <Container maxWidth="sm">
           <Typography
@@ -73,6 +72,30 @@ function HeroPage() {
                   sx={{ textTransform: "none" }}
                 >
                   Read about my projects
+                </Typography>
+              </Button>
+            </Link>
+
+            <Link
+              to="/funnything"
+              style={{
+                color: "#f7f0d7",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Button
+                variant="text"
+                color="inherit"
+                size="small"
+                endIcon={<East />}
+              >
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="button"
+                  sx={{ textTransform: "none" }}
+                >
+                  Want to see a funny thing?
                 </Typography>
               </Button>
             </Link>

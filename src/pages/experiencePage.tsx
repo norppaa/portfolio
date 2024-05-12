@@ -1,12 +1,10 @@
 import { Container, Typography } from "@mui/material";
-import Header from "../components/header";
 import theme from "../styles/theme";
 import ProjectCard from "../components/projectCard";
 
 function ExperiencePage() {
   return (
     <div>
-      <Header />
       <Container
         sx={{
           display: "flex",

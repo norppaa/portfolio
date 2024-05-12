@@ -3,11 +3,11 @@ import "../styles/App.css";
 import Header from "../components/header";
 import ProjectCard from "../components/projectCard";
 import theme from "../styles/theme";
+import image from "../pictures/OpenVAA.png";
 
 function ProjectsPage() {
   return (
     <div>
-      <Header />
       <Container
         sx={{
           display: "flex",
@@ -33,19 +33,19 @@ function ProjectsPage() {
           }}
         >
           <ProjectCard
-            imageSrc="OpenVAA.png"
+            imageSrc={image}
             title="title"
             text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
           />
 
           <ProjectCard
-            imageSrc="OpenVAA.png"
+            imageSrc={image}
             title="title"
             text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
           />
 
           <ProjectCard
-            imageSrc="OpenVAA.png"
+            imageSrc={image}
             title="title"
             text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
           />
