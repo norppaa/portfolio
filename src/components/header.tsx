@@ -4,6 +4,7 @@ import {
   IconButton,
   Menu,
   MenuItem,
+  MenuList,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -57,44 +58,59 @@ export default function Header() {
         <Menu
           id="menu"
           open={open}
-          classes={{
-            paper: "tapan",
-          }}
           anchorEl={menu}
-          sx={{
-            top: "-35px",
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "left",
           }}
+          classes={{ list: "list", paper: "paper-root", root: "root" }}
         >
-          <MenuItem
-            onClick={handleClick}
-            sx={{ display: "flex", justifyContent: "right" }}
+          <MenuList
+            sx={{
+              width: "50vw",
+              bgcolor: "#f7f0d7",
+            }}
           >
-            <CloseIcon fontSize="small" sx={{ position: "left" }} />
-          </MenuItem>
-
-          <Link to={"/"} onClick={handleClick}>
-            <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
-              <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Me?
-              </Typography>
+            <MenuItem
+              onClick={handleClick}
+              sx={{ display: "flex", justifyContent: "right" }}
+            >
+              <CloseIcon fontSize="small" sx={{ position: "left" }} />
             </MenuItem>
-          </Link>
 
-          <Link to="/experience">
-            <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
-              <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Experience?
-              </Typography>
-            </MenuItem>
-          </Link>
+            <Link to={"/"} onClick={handleClick}>
+              <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="body2"
+                >
+                  Me?
+                </Typography>
+              </MenuItem>
+            </Link>
 
-          <Link to={"/projects"}>
-            <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
-              <Typography fontFamily={theme.text?.primary?.font} fontSize={12}>
-                Projects?
-              </Typography>
-            </MenuItem>
-          </Link>
+            <Link to="/experience">
+              <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="body2"
+                >
+                  Experience?
+                </Typography>
+              </MenuItem>
+            </Link>
+
+            <Link to={"/projects"}>
+              <MenuItem onClick={handleClick} sx={{ textTransform: "none" }}>
+                <Typography
+                  fontFamily={theme.text?.primary?.font}
+                  variant="body2"
+                >
+                  Projects?
+                </Typography>
+              </MenuItem>
+            </Link>
+          </MenuList>
         </Menu>
       </Toolbar>
     </AppBar>

@@ -1,14 +1,17 @@
-#menu {
-  /* background-color: #f7f0d7; */
+.list {
+  padding: 0px;
 }
 
-.tapan {
-  background-color: #f7f0d7;
-  width: 60vw;
-  height: 130vh;
+.MuiList-padding {
+  padding: 0px;
 }
 
-.MuiList-root {
-  background-color: #f7f0d7;
-  margin: 100px;
+.paper-root .MuiList-padding {
+  max-height: none;
+  padding: 0px;
+  height: 89vh;
+}
+
+.root {
+  max-height: none;
 }
