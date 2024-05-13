@@ -11,19 +11,20 @@ function HeroPage() {
 
   return (
     <div>
-      <Container maxWidth="lg">
-        <Container maxWidth="sm">
-          <Eye x={width / 2 - width / 3.5} y={140} eyeClassName="pupil"></Eye>
-          <Eye x={width / 2 + width / 5} y={600} eyeClassName="pupil"></Eye>
+      <Container maxWidth="lg" sx={{ overflow: "hidden" }}>
+        <Container maxWidth="md">
+          <Eye x={width / 2 - width / 4} y={140} eyeClassName="pupil"></Eye>
+          <Eye x={width / 2 + width / 3.7} y={650} eyeClassName="pupil"></Eye>
 
           <Typography
-            variant="h4"
+            variant="h3"
             fontFamily="inherit"
             sx={{
               textAlign: "center",
-              py: 5,
-              mt: 15,
-              mb: 2,
+              pt: "5rem",
+              pb: "3rem",
+              mt: "5rem",
+              mb: 0,
             }}
           >
             Hi! I’m Noora Puhakka, fullstack web developer and designer.

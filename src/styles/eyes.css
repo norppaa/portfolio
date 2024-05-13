@@ -4,6 +4,8 @@
   background-color: #b8b2a4;
   border-radius: 50%;
   display: flex;
+  z-index: -1;
+
   /* opacity: 50%; */
 }
 
