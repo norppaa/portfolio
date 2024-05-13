@@ -1,4 +1,52 @@
-hi!
+# Portolio
+
+https://portfolio-noora.vercel.app/
+
+## Noora Puhakka
+
+## 100567838
+
+## Sivuston tarkoitus
+
+Sivusto on luoto toimimaan portfoliona minulle. Sivusto sisältää tietoa minusta, kokemuksestani, aiemmasta työkokemuksestani ja tekemistäni projekteista. Sivuston käyttäjä on henkilö, joka haluaa tutustua minuun, tai tekemiini projekteihin. Mitä todennäköisimmin tämä henkilö olisi mahdollinen rekryäjä, tai mahdollisesti joku kaverini, joka on kiinnostunut töistäni. Käyttäjä saa onnistuneen käyttökokemuksen, kun hän löytää tietoa minusta ja projekteistani.
+
+Toteutin sivustoni kokonaan yksin. Käytin projektiin noin 30 tuntia.
+
+## UX
+
+Sivusto on pyritty luomaan siten, että siellä liikkuminen on mahdollisimman intuitiivista. Sivustolla on tällä hetkellä kolme sivua, joista ensimmäisenä sivuna toimii ns heropage. Tämän jälkeen navigoidaan muille sivuille etsimään lisätietoa.
+
+## UI
+
+Sivuston visuaalinen muotokieli on melko pelkistetty. Siihen on kuitenkin lisätty yksittäisiä visuaalisia elementtejä, jotka tuovat sivuihin hieman mielenkiintoisuutta. Alkusivulla tämä visuaalinen elementti on liikkuvat silmät, ja muilla sivuilla toisen värinen vihreä projektien ja työkokemuksen taustalla. Värit ovat metsäisen vihreät, joka tukee metsäistä moodboardia. Käytän fonttia Junge, koska se näytti kivalta.
+
+Sivuston navigaatio on yläpalkissa. Modiilinavigaatio aukeaa yläpalkin napista.
+
+Linkki figmaan: https://www.figma.com/file/Jfiuo8KplCm2wLkUA2lbmx/VJP----project?type=design&node-id=0-1&mode=design
+
+## Sivuston rakentaminen
+
+Sivuston pääteknologioina toimivat react ja typescript. Sivuston ajamiseen käytetään yarnia. Sivusto on rakennettu pitkälti käyttäen Material UI kirjaston komponentteja: https://mui.com/material-ui/all-components/.
+
+Totesin MUI kirjaston hyväksi etenemistavaksi jo alussa, sillä se toteuttaa kaikki perus komponentit helposti ja komponentteihin on halutessaan sisällytetty mm. automaattinen skaalatuvuus tektsien osalta. Tämän lisäksi perus komponenttien tyylejä oli melko helppo muokata omaan käyttötarkoitukseeni sopivaksi. Sivuston tyylejä muokkasin pitkälti suoraan komponentteihin, enkä niinkään .css tiedostoihin, sillä tämä vaikutti nopeammalta.
+
+### Interaktiivinen elementti
+
+Interktiivinen elementtini on etusivulla näkyvät liikkuvat silmät. Silmät reagoivat käyttäjän hiiren liikkeisiin, ja silmät luovat efektin, jossa katse seuraa käyttäjän hiirtä. Elementti on toteutettu react-hookkeja hyödyntämällä, ja silmien asentoa siirretään tietyn matemaattisen kaavan mukaan hiiren liikkeitä seuraamalla.
+
+Tämän lisäksi toisena interaktiivisena elementtinä toimii mobiilimenu, jonka näyttämisessä myöskin hyödynnetään react-hookkeja. Menu aukeaa, kun käyttäjä klikkaa nappia, ja sulkeutuu, kun käyttäjä klikkaa jotain menun napeista.
+
+## Sivuston julkaisu
+
+Julkaisin sivuston vercelissä. Tämän lisäksi ostin itselleni domainin, jonka sainkin ilmeisesti toimimaan kivasti, tosin kirjoitushetkellä uusi domaini ei vielä löydy netistä, sillä sen päivittäminen vercelissä kestää.
+
+## Helppoa?
+
+Mielestäni projekti sujui melko mallikaasti. Erityisesti mielestäni gitin käyttö ja react routen käyttäminen oli todella sujuvaa. Myös projektin pystyttäminen sujui mutkattomasti.
+
+## Vaikeaa?
+
+Haastavinta projektissa oli uuden komponenttikirjaston opetteleminen ja etusivun silmien tekeminen. Komponettikirjastossa komponenttien valmiiden tyylien muokkaaminen osoittautui melko hankalaksi, mutta dokumentaation avulla siitäkin selvittiin. Silmien pupillien liikkeen saaminen luonnolliseksi vaati muutamia iteraatioita ja testailua, missä meni melko paljon aikaa.
 
 # Getting Started with Create React App
 
