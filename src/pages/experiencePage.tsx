@@ -23,7 +23,7 @@ function ExperiencePage() {
         </Typography>
 
         <Typography
-          variant="body2"
+          variant="body1"
           fontFamily={theme.text?.primary?.font}
           sx={{ p: "20px", textAlign: "center" }}
         >
@@ -38,7 +38,7 @@ function ExperiencePage() {
           myöhemmin.
         </Typography>
         <Typography
-          variant="body2"
+          variant="body1"
           fontFamily={theme.text?.primary?.font}
           sx={{ p: "20px", textAlign: "center" }}
         >

@@ -40,7 +40,7 @@ function ProjectCard({ imageSrc, title, text }: ProjectCardProps) {
           {title}
         </Typography>
         <Typography
-          variant="body2"
+          variant="body1"
           fontFamily={theme.text?.primary?.font}
           sx={{ textAlign: "center" }}
         >
