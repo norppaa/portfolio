@@ -38,6 +38,7 @@ export default function DesktopHeader() {
           height: "5vh",
           minHeight: "0px",
           display: "flex",
+          backgroundColor: "#475e39",
         }}
       >
         <div
