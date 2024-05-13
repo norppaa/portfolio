@@ -11,7 +11,7 @@ function HeroPage() {
 
   return (
     <div>
-      <Container maxWidth="lg" sx={{ overflow: "hidden" }}>
+      <Container maxWidth="lg">
         <Container maxWidth="md">
           <Eye x={width / 2 - width / 4} y={140} eyeClassName="pupil"></Eye>
           <Eye x={width / 2 + width / 3.7} y={650} eyeClassName="pupil"></Eye>
