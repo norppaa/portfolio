@@ -6,11 +6,13 @@ https://portfolio-noora.vercel.app/
 
 ## 100567838
 
-## Sivuston tarkoitus
+## Sivusto
 
 Sivusto on luoto toimimaan portfoliona minulle. Sivusto sisältää tietoa minusta, kokemuksestani, aiemmasta työkokemuksestani ja tekemistäni projekteista. Sivuston käyttäjä on henkilö, joka haluaa tutustua minuun, tai tekemiini projekteihin. Mitä todennäköisimmin tämä henkilö olisi mahdollinen rekryäjä, tai mahdollisesti joku kaverini, joka on kiinnostunut töistäni. Käyttäjä saa onnistuneen käyttökokemuksen, kun hän löytää tietoa minusta ja projekteistani.
 
 Toteutin sivustoni kokonaan yksin. Käytin projektiin noin 30 tuntia.
+
+Sivuston sisältö on vielä keskeneräinen, mutta tekninen toteutus on valmis.
 
 ## UX
 
