@@ -9,8 +9,8 @@ interface EyeProps {
 
 function Pupil(eye: EyeProps) {
   const [pupilPos, setPupilPos] = useState({
-    x: eye.x,
-    y: eye.y,
+    x: 0,
+    y: 0,
   });
 
   useEffect(() => {
@@ -23,10 +23,10 @@ function Pupil(eye: EyeProps) {
 
       const dx = mouseX - anchorX;
       const dy = mouseY - anchorY;
-
+      // console.log(eye.x, eye.y);
       setPupilPos({
-        x: anchorX + (Math.sqrt(Math.abs(dx)) * Math.sign(dx)) / 2,
-        y: anchorY + (Math.sqrt(Math.abs(dy)) * Math.sign(dy)) / 2,
+        x: (Math.sqrt(Math.abs(dx)) * Math.sign(dx)) / 2,
+        y: (Math.sqrt(Math.abs(dy)) * Math.sign(dy)) / 2,
       });
     };
 
@@ -40,7 +40,11 @@ function Pupil(eye: EyeProps) {
   return (
     <div
       className={eye.eyeClassName + " transform-center"}
-      style={{ position: "absolute", left: pupilPos.x, top: pupilPos.y }}
+      style={{
+        position: "absolute",
+        left: pupilPos.x + eye.x,
+        top: pupilPos.y + eye.y,
+      }}
     />
   );
 }
