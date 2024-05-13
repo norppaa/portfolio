@@ -9,9 +9,13 @@
 .paper-root .MuiList-padding {
   max-height: none;
   padding: 0px;
-  height: 89vh;
+  height: 85vh;
 }
 
 .root {
   max-height: none;
+}
+
+.desktop a {
+  color: #f7f0d7;
 }

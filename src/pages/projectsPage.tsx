@@ -1,6 +1,5 @@
 import { Container, Typography } from "@mui/material";
 import "../styles/App.css";
-import Header from "../components/header";
 import ProjectCard from "../components/projectCard";
 import theme from "../styles/theme";
 import image from "../pictures/OpenVAA.png";

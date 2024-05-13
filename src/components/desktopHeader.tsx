@@ -90,7 +90,7 @@ export default function DesktopHeader() {
             <Typography fontFamily="inherit" variant="body1">
               Noora Puhakka
             </Typography>
-            <a href="https://github.com/norppaa">
+            <a href="https://github.com/norppaa" aria-label="github">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.5em"
@@ -104,7 +104,10 @@ export default function DesktopHeader() {
               </svg>
             </a>
 
-            <a href="https://www.linkedin.com/in/noora-puhakka-0332a3270/">
+            <a
+              href="https://www.linkedin.com/in/noora-puhakka-0332a3270/"
+              aria-label="linkedIn"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.5em"
