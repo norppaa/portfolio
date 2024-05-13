@@ -4,12 +4,17 @@ import { East } from "@mui/icons-material";
 import theme from "../styles/theme";
 import Header from "../components/header";
 import { Link } from "react-router-dom";
+import Eye from "../components/eye";
+import Eyes from "../components/eyes";
 
 function HeroPage() {
   return (
     <div>
       <Container maxWidth="lg">
         <Container maxWidth="sm">
+          {/* <Eyes></Eyes> */}
+          <Eye x={100} y={160} eyeClassName="pupil"></Eye>
+          <Eye x={300} y={550} eyeClassName="pupil"></Eye>
           <Typography
             variant="h4"
             fontFamily="inherit"
