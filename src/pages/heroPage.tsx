@@ -204,7 +204,6 @@ function HeroPage() {
           </Container>
         </Container>
       </Container>
-      <img src="/pictures/trees.png" className="tausta"></img>
     </div>
   );
 }
