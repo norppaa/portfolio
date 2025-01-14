@@ -7,7 +7,7 @@ theme = responsiveFontSizes(theme);
 theme = {
   ...theme,
   background: {
-    color: "#475e39",
+    color: "#698b70",
   },
   text: {
     primary: {

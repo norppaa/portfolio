@@ -1,7 +1,5 @@
 import { Container, Typography } from "@mui/material";
 import theme from "../styles/theme";
-import ProjectCard from "../components/projectCard";
-import image from "../pictures/OpenVAA.png";
 
 function ExperiencePage() {
   return (
@@ -98,25 +96,7 @@ function ExperiencePage() {
             alignItems: "center",
             rowGap: "1rem",
           }}
-        >
-          <ProjectCard
-            imageSrc={image}
-            title="work"
-            text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-          />
-
-          <ProjectCard
-            imageSrc={image}
-            title="work"
-            text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-          />
-
-          <ProjectCard
-            imageSrc={image}
-            title="work"
-            text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-          />
-        </Container>
+        ></Container>
       </Container>
     </div>
   );

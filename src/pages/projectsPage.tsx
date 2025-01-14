@@ -1,8 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import "../styles/App.css";
-import ProjectCard from "../components/projectCard";
+
 import theme from "../styles/theme";
-import image from "../pictures/OpenVAA.png";
 
 function ProjectsPage() {
   return (
@@ -16,7 +15,7 @@ function ProjectsPage() {
         }}
       >
         <Typography
-          variant="h4"
+          variant="body1"
           fontFamily={theme.text?.primary?.font}
           sx={{ p: "20px" }}
         >
@@ -29,26 +28,10 @@ function ProjectsPage() {
             flexDirection: "column",
             alignItems: "center",
             rowGap: "1rem",
+            margin: "0rem",
+            padding: "0rem",
           }}
-        >
-          <ProjectCard
-            imageSrc={image}
-            title="title"
-            text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-          />
-
-          <ProjectCard
-            imageSrc={image}
-            title="title"
-            text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-          />
-
-          <ProjectCard
-            imageSrc={image}
-            title="title"
-            text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-          />
-        </Container>
+        ></Container>
       </Container>
     </div>
   );

@@ -39,7 +39,7 @@ export default function MobileHeader() {
             height: "5vh",
             minHeight: "0px",
             display: "flex",
-            backgroundColor: "#475e39",
+            backgroundColor: "#698b70",
           }}
         >
           <Container

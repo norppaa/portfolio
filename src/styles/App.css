@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
 
 body {
-  background-color: #475e39;
+  background-color: #789c7f;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f7f0d7;
+  color: #faf6ea;
 }
 
 a {
   text-decoration: none;
   text-transform: none;
   color: black;
+  font-size: 0.85rem;
 }

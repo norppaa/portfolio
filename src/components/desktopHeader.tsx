@@ -1,18 +1,10 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import { useState } from "react";
 import "../styles/Menu.css";
 import "../styles/App.css";
-import { Link } from "react-router-dom";
 import Headroom from "react-headroom";
+import "../styles/App.css";
 
 export default function DesktopHeader() {
-  const [open, setOpen] = useState(false);
-  const [menu, setMenu] = useState(null);
-  const handleClick = (e: any) => {
-    setMenu(e.currentTarget);
-    setOpen(!open);
-  };
-
   return (
     <Headroom>
       <AppBar
@@ -29,7 +21,7 @@ export default function DesktopHeader() {
             height: "5vh",
             minHeight: "0px",
             display: "flex",
-            backgroundColor: "#475e39",
+            backgroundColor: "#789c7f",
           }}
         >
           <div
@@ -49,25 +41,7 @@ export default function DesktopHeader() {
                 gap: "30px",
                 //   pa: "0px",
               }}
-            >
-              <Link to={"/"} onClick={handleClick}>
-                <Typography fontFamily="inherit" variant="body1">
-                  Me?
-                </Typography>
-              </Link>
-
-              <Link to="/experience">
-                <Typography fontFamily="inherit" variant="body1">
-                  My Experience?
-                </Typography>
-              </Link>
-
-              <Link to={"/projects"}>
-                <Typography fontFamily="inherit" variant="body1">
-                  My projects?
-                </Typography>
-              </Link>
-            </div>
+            ></div>
 
             <div
               className="desktop"
