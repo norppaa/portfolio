@@ -128,7 +128,6 @@ function HeroPage() {
               }}
             >
               <ProjectCard
-                imageSrc="/pictures/OpenVAA.png"
                 title="OpenVAA,"
                 subtitle="Voting Advice Application"
                 text="Contributed to an open-source voting advice application over the course of half a year as a part of a university course and continued with the project during summer as a paid programmer. The project is organized by OpenVAA. Main technologies used are Svelte, Strapi and Docker. "
@@ -136,17 +135,23 @@ function HeroPage() {
               ></ProjectCard>
 
               <ProjectCard
-                imageSrc="/pictures/OpenVAA.png"
                 title="Portfolio"
                 text="Built this portfolio website from scratch using React, typescript and Material-UI. The website is hosted on Vercel and the source code is available on GitHub."
                 link="https://github.com/norppaa/portfolio"
               ></ProjectCard>
-              {/* <ProjectCard
-                imageSrc="/pictures/OpenVAA.png"
-                title="title"
-                text="kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa kontsa "
-                link="https://github.com/norppaa"
-              ></ProjectCard> */}
+
+              <ProjectCard
+                title="Blog Review App"
+                text="Developed a full stack web -application where users can sign in, make reviews, and like other reviews. I Implemented the frontend with React and JavaScript and the backend using JavaScript, connecting it to a MongoDB database.
+I also Containerized the application using Docker."
+                link="https://github.com/norppaa/blogReviewApp"
+              ></ProjectCard>
+
+              <ProjectCard
+                title="Course review system"
+                text="The application is still in development. I am building a full stack web application where users can review courses and like other reviews. The frontend is built with Svelte and the backend with Deno and Javascript, and connected it to a PostgreSQL database."
+                link="https://github.com/norppaa/Course-review"
+              ></ProjectCard>
             </Container>
           </Container>
 

@@ -9,20 +9,13 @@ import {
 import theme from "../styles/theme";
 
 interface ProjectCardProps {
-  imageSrc: string;
   title: string;
   subtitle?: string;
   text: string;
   link: string;
 }
 
-function ProjectCard({
-  imageSrc,
-  title,
-  subtitle,
-  text,
-  link,
-}: ProjectCardProps) {
+function ProjectCard({ title, subtitle, text, link }: ProjectCardProps) {
   return (
     <Card
       sx={{
